@@ -18,6 +18,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *buttonSeven;
 @property (strong, nonatomic) IBOutlet UIButton *buttonEight;
 @property (strong, nonatomic) IBOutlet UIButton *buttonNine;
+@property (weak, nonatomic) IBOutlet UILabel *whichPlayerLabel;
 
 @end
 
@@ -26,24 +27,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
-- (IBAction)onButtonOnePressed:(UIButton *)sender {
+
+- (IBAction)onButtonTapped:(UIButton *)sender {
 }
-- (IBAction)onButtonTwoPressed:(UIButton *)sender {
-}
-- (IBAction)onButtonThreePressed:(UIButton *)sender {
-}
-- (IBAction)onButtonFourPressed:(UIButton *)sender {
-}
-- (IBAction)onButtonFivePressed:(UIButton *)sender {
-}
-- (IBAction)onButtonSixPressed:(UIButton *)sender {
-}
-- (IBAction)onButtonSevenPressed:(UIButton *)sender {
-}
-- (IBAction)onButtonEightPressed:(UIButton *)sender {
-}
-- (IBAction)onButtonNinePressed:(UIButton *)sender {
-}
+
 
 
 @end

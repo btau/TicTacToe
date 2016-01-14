@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		698073B71C48443B00B56FDA /* WikiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 698073B61C48443B00B56FDA /* WikiViewController.m */; };
 		A831866A1C483AB30014C01C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A83186691C483AB30014C01C /* main.m */; };
 		A831866D1C483AB30014C01C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A831866C1C483AB30014C01C /* AppDelegate.m */; };
 		A83186701C483AB30014C01C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A831866F1C483AB30014C01C /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		698073B51C48443B00B56FDA /* WikiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WikiViewController.h; sourceTree = "<group>"; };
+		698073B61C48443B00B56FDA /* WikiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WikiViewController.m; sourceTree = "<group>"; };
 		A83186651C483AB30014C01C /* TicToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A83186691C483AB30014C01C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A831866B1C483AB30014C01C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -108,6 +111,8 @@
 				A831866E1C483AB30014C01C /* ViewController.h */,
 				A831866F1C483AB30014C01C /* ViewController.m */,
 				A83186711C483AB30014C01C /* Main.storyboard */,
+				698073B51C48443B00B56FDA /* WikiViewController.h */,
+				698073B61C48443B00B56FDA /* WikiViewController.m */,
 				A83186771C483AB30014C01C /* Assets.xcassets */,
 				A83186791C483AB30014C01C /* LaunchScreen.storyboard */,
 				A831867C1C483AB30014C01C /* Info.plist */,
@@ -277,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A83186701C483AB30014C01C /* ViewController.m in Sources */,
+				698073B71C48443B00B56FDA /* WikiViewController.m in Sources */,
 				A831866D1C483AB30014C01C /* AppDelegate.m in Sources */,
 				A831866A1C483AB30014C01C /* main.m in Sources */,
 				A83186761C483AB30014C01C /* TicToe.xcdatamodeld in Sources */,
@@ -505,6 +511,7 @@
 				A83186971C483AB30014C01C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A83186981C483AB30014C01C /* Build configuration list for PBXNativeTarget "TicToeTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +520,7 @@
 				A831869A1C483AB30014C01C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A831869B1C483AB30014C01C /* Build configuration list for PBXNativeTarget "TicToeUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +529,7 @@
 				A831869D1C483AB30014C01C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
