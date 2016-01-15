@@ -64,6 +64,9 @@
 
 
 - (NSString *)whoWon {
+    
+    NSLog(@"The current set is %@", self.currentSet);
+    
     for (NSSet *set in self.winArray) {
         if ([set isSubsetOfSet:self.currentSet]) {
             self.gameWon = YES;
@@ -83,6 +86,7 @@
     }
     
     return @"";
+    
 }
 
 
@@ -114,28 +118,99 @@
 
 
 - (void)setWinTable {
-    NSSet *set1 = [NSSet setWithObjects:self.buttonOne, self.buttonTwo, self.buttonThree, nil];
-    NSSet *set2 = [NSSet setWithObjects:self.buttonFour, self.buttonFive, self.buttonSix, nil];
-    NSSet *set3 = [NSSet setWithObjects:self.buttonSeven, self.buttonEight, self.buttonNine, nil];
-    NSSet *set4 = [NSSet setWithObjects:self.buttonOne, self.buttonFour, self.buttonSeven, nil];
-    NSSet *set5 = [NSSet setWithObjects:self.buttonTwo, self.buttonFive, self.buttonEight, nil];
-    NSSet *set6 = [NSSet setWithObjects:self.buttonThree, self.buttonSix, self.buttonNine, nil];
-    NSSet *set7 = [NSSet setWithObjects:self.buttonOne, self.buttonFive, self.buttonNine, nil];
-    NSSet *set8 = [NSSet setWithObjects:self.buttonSeven, self.buttonFive, self.buttonThree, nil];
+    //Checking if X wins
+    if ([self.buttonOne.titleLabel.text isEqualToString:@"X"] && [self.buttonTwo.titleLabel.text isEqualToString:@"X"] && [self.buttonThree.titleLabel.text isEqualToString:@"X"]) {
+        NSLog(@"X Wins");
+        self.gameWon = YES;
+    } else if ([self.buttonFour.titleLabel.text isEqualToString:@"X"] && [self.buttonFive.titleLabel.text isEqualToString:@"X"] && [self.buttonSix.titleLabel.text isEqualToString:@"X"]) {
+        NSLog(@"X Wins");
+        self.gameWon = YES;
+    } else if ([self.buttonSeven.titleLabel.text isEqualToString:@"X"] && [self.buttonEight.titleLabel.text isEqualToString:@"X"] && [self.buttonNine.titleLabel.text isEqualToString:@"X"]) {
+        NSLog(@"X Wins");
+        self.gameWon = YES;
+    } else if ([self.buttonOne.titleLabel.text isEqualToString:@"X"] && [self.buttonFour.titleLabel.text isEqualToString:@"X"] && [self.buttonSeven.titleLabel.text isEqualToString:@"X"]) {
+        NSLog(@"X Wins");
+        self.gameWon = YES;
+    } else if ([self.buttonTwo.titleLabel.text isEqualToString:@"X"] && [self.buttonFive.titleLabel.text isEqualToString:@"X"] && [self.buttonEight.titleLabel.text isEqualToString:@"X"]) {
+        NSLog(@"X Wins");
+        self.gameWon = YES;
+    } else if ([self.buttonThree.titleLabel.text isEqualToString:@"X"] && [self.buttonSix.titleLabel.text isEqualToString:@"X"] && [self.buttonNine.titleLabel.text isEqualToString:@"X"]) {
+        NSLog(@"X Wins");
+        self.gameWon = YES;
+    } else if ([self.buttonOne.titleLabel.text isEqualToString:@"X"] && [self.buttonFive.titleLabel.text isEqualToString:@"X"] && [self.buttonNine.titleLabel.text isEqualToString:@"X"]) {
+        NSLog(@"X Wins");
+        self.gameWon = YES;
+    } else if ([self.buttonThree.titleLabel.text isEqualToString:@"X"] && [self.buttonFive.titleLabel.text isEqualToString:@"X"] && [self.buttonSeven.titleLabel.text isEqualToString:@"X"]) {
+        NSLog(@"X Wins");
+        self.gameWon = YES;
+    }
     
-    self.winArray = @[set1, set2, set3, set4, set5, set6, set7, set8];
+    
+    //Checking if O wins
+    if ([self.buttonOne.titleLabel.text isEqualToString:@"O"] && [self.buttonTwo.titleLabel.text isEqualToString:@"O"] && [self.buttonThree.titleLabel.text isEqualToString:@"O"]) {
+        NSLog(@"O Wins");
+        self.gameWon = YES;
+    } else if ([self.buttonFour.titleLabel.text isEqualToString:@"O"] && [self.buttonFive.titleLabel.text isEqualToString:@"O"] && [self.buttonSix.titleLabel.text isEqualToString:@"O"]) {
+        NSLog(@"O Wins");
+        self.gameWon = YES;
+    } else if ([self.buttonSeven.titleLabel.text isEqualToString:@"O"] && [self.buttonEight.titleLabel.text isEqualToString:@"O"] && [self.buttonNine.titleLabel.text isEqualToString:@"O"]) {
+        NSLog(@"O Wins");
+        self.gameWon = YES;
+    } else if ([self.buttonOne.titleLabel.text isEqualToString:@"O"] && [self.buttonFour.titleLabel.text isEqualToString:@"O"] && [self.buttonSeven.titleLabel.text isEqualToString:@"O"]) {
+        NSLog(@"O Wins");
+        self.gameWon = YES;
+    } else if ([self.buttonTwo.titleLabel.text isEqualToString:@"O"] && [self.buttonFive.titleLabel.text isEqualToString:@"O"] && [self.buttonEight.titleLabel.text isEqualToString:@"O"]) {
+        NSLog(@"O Wins");
+        self.gameWon = YES;
+    } else if ([self.buttonThree.titleLabel.text isEqualToString:@"O"] && [self.buttonSix.titleLabel.text isEqualToString:@"O"] && [self.buttonNine.titleLabel.text isEqualToString:@"O"]) {
+        NSLog(@"O Wins");
+        self.gameWon = YES;
+    } else if ([self.buttonOne.titleLabel.text isEqualToString:@"O"] && [self.buttonFive.titleLabel.text isEqualToString:@"O"] && [self.buttonNine.titleLabel.text isEqualToString:@"O"]) {
+        NSLog(@"O Wins");
+        self.gameWon = YES;
+    } else if ([self.buttonThree.titleLabel.text isEqualToString:@"O"] && [self.buttonFive.titleLabel.text isEqualToString:@"O"] && [self.buttonSeven.titleLabel.text isEqualToString:@"O"]) {
+        NSLog(@"O Wins");
+        self.gameWon = YES;
+    }
+    
 }
+
+    
+    
+    
+    
+    
+    
+    
+    
+//    NSSet *set1 = [NSSet setWithObjects:self.buttonOne.titleLabel.text, self.buttonTwo.titleLabel.text, self.buttonThree.titleLabel.text, nil];
+//    NSSet *set2 = [NSSet setWithObjects:self.buttonFour.titleLabel.text, self.buttonFive.titleLabel.text, self.buttonSix.titleLabel.text, nil];
+//    NSSet *set3 = [NSSet setWithObjects:self.buttonSeven.titleLabel.text, self.buttonEight.titleLabel.text, self.buttonNine.titleLabel.text, nil];
+//    NSSet *set4 = [NSSet setWithObjects:self.buttonOne.titleLabel.text, self.buttonFour.titleLabel.text, self.buttonSeven.titleLabel.text, nil];
+//    NSSet *set5 = [NSSet setWithObjects:self.buttonTwo.titleLabel.text, self.buttonFive.titleLabel.text, self.buttonEight.titleLabel.text, nil];
+//    NSSet *set6 = [NSSet setWithObjects:self.buttonThree.titleLabel.text, self.buttonSix.titleLabel.text, self.buttonNine.titleLabel.text, nil];
+//    NSSet *set7 = [NSSet setWithObjects:self.buttonOne.titleLabel.text, self.buttonFive.titleLabel.text, self.buttonNine.titleLabel.text, nil];
+//    NSSet *set8 = [NSSet setWithObjects:self.buttonSeven.titleLabel.text, self.buttonFive.titleLabel.text, self.buttonThree.titleLabel.text, nil];
+//    
+//    NSLog(@"Set1 is:  %@", set1);
+//    
+//    self.winArray = @[set1, set2, set3, set4, set5, set6, set7, set8];
+
 
 
 - (IBAction)onButtonTapped:(UIButton *)currentButton {
-        [currentButton setTitle:self.currentPlayer forState:UIControlStateNormal];
-        [currentButton setTitleColor:self.currentColor forState:UIControlStateNormal];
+    [currentButton setTitle:self.currentPlayer forState:UIControlStateNormal];
+    [currentButton setTitleColor:self.currentColor forState:UIControlStateNormal];
 
-        currentButton.enabled = NO;
+    currentButton.enabled = NO;
     
-        [self.currentSet addObject:self.currentPlayer];
-        [self currentPlayerMethod];
-
+    
+    [self.currentSet addObject:[NSString stringWithFormat:@"%@",currentButton.titleLabel.text]];
+    [self whoWon];
+    [self currentPlayerMethod];
+    [self gameResults];
+    [self setWinTable];
+    
     
 
 }
