@@ -91,6 +91,7 @@
 
 
 - (void)gameResults {
+        
     if (![[self whoWon] isEqual:@""]) {
         NSLog(@"%@ Won", [self whoWon]);
         
@@ -118,28 +119,36 @@
 
 
 - (void)setWinTable {
-    //Checking if X wins
+    //Checking if X win.
+    
     if ([self.buttonOne.titleLabel.text isEqualToString:@"X"] && [self.buttonTwo.titleLabel.text isEqualToString:@"X"] && [self.buttonThree.titleLabel.text isEqualToString:@"X"]) {
         NSLog(@"X Wins");
         self.gameWon = YES;
+        
     } else if ([self.buttonFour.titleLabel.text isEqualToString:@"X"] && [self.buttonFive.titleLabel.text isEqualToString:@"X"] && [self.buttonSix.titleLabel.text isEqualToString:@"X"]) {
         NSLog(@"X Wins");
         self.gameWon = YES;
+        
     } else if ([self.buttonSeven.titleLabel.text isEqualToString:@"X"] && [self.buttonEight.titleLabel.text isEqualToString:@"X"] && [self.buttonNine.titleLabel.text isEqualToString:@"X"]) {
         NSLog(@"X Wins");
         self.gameWon = YES;
+        
     } else if ([self.buttonOne.titleLabel.text isEqualToString:@"X"] && [self.buttonFour.titleLabel.text isEqualToString:@"X"] && [self.buttonSeven.titleLabel.text isEqualToString:@"X"]) {
         NSLog(@"X Wins");
         self.gameWon = YES;
+        
     } else if ([self.buttonTwo.titleLabel.text isEqualToString:@"X"] && [self.buttonFive.titleLabel.text isEqualToString:@"X"] && [self.buttonEight.titleLabel.text isEqualToString:@"X"]) {
         NSLog(@"X Wins");
         self.gameWon = YES;
+        
     } else if ([self.buttonThree.titleLabel.text isEqualToString:@"X"] && [self.buttonSix.titleLabel.text isEqualToString:@"X"] && [self.buttonNine.titleLabel.text isEqualToString:@"X"]) {
         NSLog(@"X Wins");
         self.gameWon = YES;
+        
     } else if ([self.buttonOne.titleLabel.text isEqualToString:@"X"] && [self.buttonFive.titleLabel.text isEqualToString:@"X"] && [self.buttonNine.titleLabel.text isEqualToString:@"X"]) {
         NSLog(@"X Wins");
         self.gameWon = YES;
+        
     } else if ([self.buttonThree.titleLabel.text isEqualToString:@"X"] && [self.buttonFive.titleLabel.text isEqualToString:@"X"] && [self.buttonSeven.titleLabel.text isEqualToString:@"X"]) {
         NSLog(@"X Wins");
         self.gameWon = YES;
@@ -209,7 +218,7 @@
     [self whoWon];
     [self currentPlayerMethod];
     [self gameResults];
-    [self setWinTable];
+    [self setWinTable];selel
     
     
 
